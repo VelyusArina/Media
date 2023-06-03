@@ -1,0 +1,82 @@
+<!DOCTYPE html> 
+<html>
+    <head>
+        <meta charset = "utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1"><title>LabMedia</title>
+        <link type = "text/css" rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <div class="contain">
+            <header class="header">
+                <div class="head_indo">Мои любимые StandUp комики</div>
+                <nav class="link_info">
+                    <a class="nav_link" target="_blank" href="https://standupclub.ru/">Сайт клуба</a>
+                    <a class="nav_link" target="_blank" href="https://github.com/ArinaVelyus">Велюс А.К.</a>
+                </nav>
+            </header>
+
+            <div class="content">
+                    <div class="MySlides">
+                        <img src="img/Медведев.jpg" width=100%  height="400" alt="img-1">  
+                        <div class="text">Вася Медведев</div>
+                    </div>
+                    <div class="MySlides">
+                        <img src="img/Коваль.jpeg" width=100%  height="400" alt="img-2">
+                        <div class="text">Дима Коваль</div>  
+                    </div>
+                    <div class="MySlides">
+                        <img src="img/Бухаров.jpg" width=100% height="400" alt="img-3">
+                        <div class="text">Вова Бухаров</div>  
+                    </div>
+                    <div class="MySlides">
+                        <img src="img/Малой.jpg" width=100%  height="400" alt="img-4">
+                        <div class="text">Саша Малой</div>  
+                    </div>
+                    <div class="MySlides">
+                        <img src="img/Орлов.jpeg" width=100%  height="400" alt="img-5">
+                        <div class="text">Сергей Орлов</div>  
+                    </div>
+                    <div class="MySlides">
+                        <img src="img/Чермен.jpg" width=100%  height="400" alt="img-6">
+                        <div class="text">Чермен Качмазов</div>  
+                    </div>
+
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                    <span class="dot" onclick="currentSlide(4)"></span>
+                    <span class="dot" onclick="currentSlide(5)"></span>
+                    <span class="dot" onclick="currentSlide(6)"></span>
+
+                  </div>
+                <div class="inter">
+                    <label for="interval" style="color: white ;">Интервал (миллисекунды): </label>
+                    <input type="number" id="interval" value="3000">
+                    <button id="start">Start Slideshow</button>
+                    <button id="stop">Stop Slideshow</button>
+                </div>
+                <audio id="audio" src="music\music1.mp3">
+                </audio>
+                <div id="controls">
+                    <label class="head_music" style="color: white ;">Слушай музыку и наслаждайся фотографиями </label>
+                    <div class="audio-track"><div class="time"></div></div>
+                    <div class="btn-controls">
+                        <button class="play">Play</button>
+                        <button class="pause">Pause</button>
+                        <button class="prev1">Prev</button>
+                        <button class="next1">Next</button>
+                    </div>
+                    <canvas id="canvas" width="800" height="150"></canvas>
+                </div>
+                                
+            </div> 
+        </div>  
+        <script src="main.js" type="text/javascript"></script>
+    
+    </body>  
+</html>
